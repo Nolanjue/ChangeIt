@@ -17,7 +17,7 @@ document.getElementById('contact-form').addEventListener('submit',  async functi
     const user_email = formObject.user_email;
     const message = formObject.message;
 
-    await fetch('http://localhost:3000/send-email', {
+    await fetch('https://changeit-production.up.railway.app/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'  // Set the content type to JSON

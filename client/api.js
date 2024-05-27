@@ -112,7 +112,7 @@ chatForm.addEventListener('submit', async function (e) {
 
     console.log(query, final_value)
     //call API
-    const modelResponse =  await fetch('http://localhost:3000/getLLM', {
+    const modelResponse =  await fetch('https://changeit-production.up.railway.app/getLLM', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
