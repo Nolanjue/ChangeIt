@@ -16,11 +16,27 @@ const port = process.env.PORT;
 
 //parse json bodies easily...
 app.use(express.json());
-const corsOptions = {
-  origin: 'https://changenow.netlify.app',
-  optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
-};
+
+    
+
+// Some legacy browsers (IE11, various SmartTVs) choke on 204
+
 app.use(cors(corsOptions));
+const allowedOrigins = ['http://localhost:5500', 'https://changenow.netlify.app'];
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        // Check if the origin is in the allowedOrigins array
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+};
+
+app.use(cors(corsOptions));
+
 const apiKey = process.env.OPENAI_API_KEY;
 
 async function getLLM(query) {
