@@ -21,7 +21,7 @@ app.use(express.json());
 
 // Some legacy browsers (IE11, various SmartTVs) choke on 204
 
-app.use(cors(corsOptions));
+
 const allowedOrigins = ['http://localhost:5500', 'https://changenow.netlify.app'];
 
 const corsOptions = {
