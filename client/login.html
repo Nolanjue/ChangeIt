@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChangeIt</title>
+  <meta name="description" content="ChangeIt is a sample AI company made as a project to explore LLMs and their applications in the change in tech. ">
+  <link rel="icon" type="image/png" href="/images/companylogo.png"/> 
+  <link rel="stylesheet" href="login.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <div id="g_id_onload" data-client_id="835415666408-kvam53mh54bmemcvcqobf2j51ijer6gh.apps.googleusercontent.com"
+    data-callback="onSignIn">
+  </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+  
+
+</head>
+
+<body>
+ 
+  <div class='header'>
+    <a href = '/client/login.html'>
+    <div class = 'logo'>
+      <h1>Change</h1>
+      <span>It</span>
+    </div>
+   </a>
+    <div class = "sections">
+      <div id="signInDiv"></div>
+      <button class = 'signout' onclick=onSignout()><a>Sign out</a></button>
+      <button class = 'hovers'>
+        <a>Categories</a>
+        <ul class = 'submenu'>
+          <li><a href="/client/pages/about.html">About us</a></li>
+          <li><a href="/client/chat.html">Try it out!</a></li>
+         
+          <li><a href="/client/pages/goals.html">Future goals</a></li>
+        </ul>
+      </button>
+        
+        <Button class = 'footer-button'>
+          <a href = "/client/pages/contact.html">Contact us</a>
+        </Button>
+     
+    </div>
+  </div>
+  <div class = "main">
+    <div class = 'main-div-one'>
+        <span>Ready to change?</span>
+        <img src = "/images/cimage1.png" alt = "photo1"/>
+    </div>
+    <div class = 'intro'>
+      <div class = 'intro-div'>
+        <h1>Leading business task AI platform</h1>
+        
+        <h3>We do the repetitve tasks and let you focus on the important decisions for your business!</h3>
+      </div>
+      <img src = '/images/cintro.png' alt = 'intro'/>
+    </div>
+    <div class = 'main-div-two'>
+      <span>Discover more!</span>
+      <div class = 'img-holders'>
+        <a href="/about">
+            <div class = 'img-holder'>
+            <img  class = 'hover-image' src="/images/cimage2.png" alt="About us">
+              <figcaption class = 'text'>
+                <h3>About us</h3>
+                <p >What we do, and how we do it</p>
+                <p>Learn how you can utilize our resources!</p>
+              </figcaption>
+            </div>
+          </a>
+          <a href="/client/chat.html">
+            <div class = 'img-holder'>
+            <img  class = 'hover-image' src="/images/cimage3.png" alt="About us">
+              <figcaption class = 'text'>
+                <h3>Our Sample Product</h3>
+                <p >Try an LLM that schedules events, sends emails and creates zoom meetings!</p>
+                <p>Give it a taste! </p>
+              </figcaption>
+            </div>
+          </a>
+          <!--
+          <a href="/about">
+            <div class = 'img-holder'>
+            <img  class = 'hover-image' src="/images/cimage4.png" alt="About us">
+              <figcaption class = 'text'>
+                <h3>What we offer</h3>
+                <p >How we can save your business time and money!</p>
+                <p>We scale specialized AI agents to custom LLMs </p>
+              </figcaption>
+            </div>
+          </a>
+          -->
+          <a href="/about">
+            <div class = 'img-holder'>
+            <img  class = 'hover-image' src="/images/cimage5.png" alt="About us">
+              <figcaption class = 'text'>
+                <h3>Our goal for the future</h3>
+                <p >What we have and hope to achieve</p>
+                <p>Find what other opportunities await</p>
+              </figcaption>
+            </div>
+          </a>
+      </div>
+  </div>
+  <div class = 'footer'>
+       <div class = "values">
+          <h1> Interested in Working with us?</h1>
+          <button class = 'footer-button'>
+            <a href = "/client/pages/contact.html">Send us a message</a>
+          </button>
+          <div class = 'media'>
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2f2;"></i>
+            <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #f7f7f8;"></i>
+            <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+          </div>
+        </div>
+  </div>
+ 
+  
+  
+
+  <script src="https://kit.fontawesome.com/0d8d310a54.js" crossorigin="anonymous"></script>
+  <script src=login.js></script>
+</body>
+
+</html>

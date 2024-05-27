@@ -1,0 +1,127 @@
+body {
+    height:100%;
+    font-family: "League Spartan", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 49, 77);
+}
+@media(max-width:700px){
+    .goal{
+        margin-left:100px;
+        align-items:center;
+    }
+    .goals-section h1{
+        margin-left:100px;
+    }
+    .goal-text{
+        width:100%;
+        
+    }
+    .goal-text h1{
+        transform:translate(-90px);
+        width:100%;
+       
+    }
+    .goal-logo{
+        font-size:50px;
+    }
+    .goal{
+        flex-direction:column;
+        width:100%;
+    }
+   
+}
+.goals-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top:100px;
+    gap:100px;
+}
+
+.goal {
+    display: flex;
+    gap:100px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    width:100%;
+}
+
+.goal:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.goal:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.goal:nth-child(3) {
+    animation-delay: 0.9s;
+}
+
+.goal img {
+    width:50%;
+    margin-bottom: 10px;
+    min-height:50%;
+    box-shadow: 6px 2px 21px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 2px 21px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px 2px 21px 3px rgba(0, 0, 0, 0.75);
+    background-color: rgb(11, 34, 48);
+    padding: 10px;
+
+
+}
+.goal-text{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+.goal-text h1{
+    font-weight:100;
+    color:white;
+    text-align:center;
+}
+.goal-text h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    color: #d8d3d3;
+    text-align:center;
+}
+
+.goal-text span {
+    font-size: 25px;
+    color: #dfc1c1;
+    font-weight:100;
+    text-align:center;
+}
+.goal-logo{
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255, 238, 238);
+    text-shadow:
+        6px 6px 0 rgba(0,0,0,0.1),
+        -5px 5px 0 rgba(0,0,0,0.1),
+        5px -5px 0 rgba(0,0,0,0.1),
+        -2px 2px 0 rgba(0,0,0,0.1),
+        5px 5px 0 rgba(0,0,0,0.1);
+
+    font-size:125px;
+    align-self:center;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

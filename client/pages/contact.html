@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeIt</title>
+    <meta name="description" content="ChangeIt is a sample AI company made as a project to explore LLMs and their applications in the change in tech. ">
+    <link rel="icon" type="image/png" href="/images/companylogo.png"/> 
+    <link rel="stylesheet" href="/client/login.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload" data-client_id="835415666408-kvam53mh54bmemcvcqobf2j51ijer6gh.apps.googleusercontent.com"
+      data-callback="onSignIn">
+    </div>
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class='header'>
+        <a href = '/client/login.html'>
+        <div class = 'logo'>
+          <h1>Change</h1>
+          <span>It</span>
+        </div>
+       </a>
+        <div class = "sections">
+          <div id="signInDiv"></div>
+          <button class = 'signout' onclick=onSignout()><a>Sign out</a></button>
+          <button class = 'hovers'>
+            <a>Categories</a>
+            <ul class = 'submenu'>
+              <li><a href="/client/pages/about.html">About us</a></li>
+              <li><a href="/client/chat.html">Try it out!</a></li>
+              <li><a href="/client/pages/goals.html">Future goals</a></li>
+            </ul>
+          </button>
+            
+            <Button class = 'footer-button'>
+              <a href = "/client/pages/contact.html">Contact us</a>
+            </Button>
+            
+        </div>
+      </div>
+    <!--contact page here-->
+     <div class = 'message'>
+      <div class="container">
+        <div class="form-header">
+          <h1>Send us a message of your thoughts!</h1>
+        </div>
+        <div class="form-container">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="user_name">Name</label>
+              <input type="text" id="user_name" name="user_name" required>
+            </div>
+            <div class="form-group">
+              <label for="user_email">Email</label>
+              <input type="email" id="user_email" name="user_email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <input  type="submit" value="Send">
+            </div>
+          </form>
+        </div>
+      </div>
+     </div>
+      <div class = 'footer'>
+        <div class = "values">
+           <h1> Interested in Working with us?</h1>
+           <button class = 'footer-button'>
+             <a href = "/client/pages/contact.html">Send us a message</a>
+           </button>
+           <div class = 'media'>
+             <i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2f2;"></i>
+             <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #f7f7f8;"></i>
+             <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+           </div>
+         </div>
+    </div>
+    <script src="https://kit.fontawesome.com/0d8d310a54.js" crossorigin="anonymous"></script>
+    <script src = '/client/login.js'></script>
+    <script src = '/client/pages/contact.js'></script>
+</body>
+</html>

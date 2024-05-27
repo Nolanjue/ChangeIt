@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChangeIt</title>
+    <meta name="description" content="ChangeIt is a sample AI company made as a project to explore LLMs and their applications in the change in tech. ">
+    <link rel="icon" type="image/png" href="/images/companylogo.png"/> 
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="chat.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  
+  <div id="g_id_onload" data-client_id="835415666408-kvam53mh54bmemcvcqobf2j51ijer6gh.apps.googleusercontent.com"
+    data-callback="onSignIn">
+  </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=League+Spartan:wght@100..900&family=Pacifico&family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class='header'>
+    <a href = '/client/login.html'>
+    <div class = 'logo'>
+      <h1>Change</h1>
+      <span>It</span>
+    </div>
+   </a>
+    <div class = "sections">
+      <div id="signInDiv"></div>
+      <button class = 'signout' onclick=onSignout()><a>Sign out</a></button>
+      <button class = 'hovers'>
+        <a>Categories</a>
+        <ul class = 'submenu'>
+          <li><a href="/client/pages/about.html">About us</a></li>
+          <li><a href="/client/chat.html">Try it out!</a></li>
+          <li><a href="/client/pages/goals.html">Future goals</a></li>
+        </ul>
+      </button>
+        
+        <Button class = 'footer-button'>
+          <a href = "/client/pages/contact.html">Contact us</a>
+        </Button>
+     
+    </div>
+  </div>
+
+<!--chatbot here, perhaps use websocket here..-->
+<div class = 'chat'>
+  <div class = 'title'>
+    <h1>Talk to Bob AI</h1>
+    <span>A taste of personalized LLMs and AI agents for your business needs</span>
+    
+    <div class = 'chat-bot'>
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          <h3><i class="fas fa-comments"></i> Ask Bob to make yourself an google calendar!</h3>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+          <button class="btn" ><i class="fas fa-paper-plane"></i> Send</button>
+          <dotlottie-player  class = 'loader'src="https://lottie.host/f75557d6-c758-4566-86be-1fc6d3b11864/n9nfSgYsLs.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></dotlottie-player>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--Footer here!-->
+  <div class = 'footer'>
+    <div class = "values">
+       <h1> Interested in Working with us?</h1>
+       <button class = 'footer-button'>
+         <a href = "/client/pages/contact.html">Send us a message</a>
+       </button>
+       <div class = 'media'>
+         <i class="fa-brands fa-instagram fa-2xl" style="color: #f2f2f2;"></i>
+         <i class="fa-brands fa-linkedin-in fa-2xl" style="color: #f7f7f8;"></i>
+         <i class="fa-brands fa-twitter fa-2xl" style="color: #ffffff;"></i>
+       </div>
+     </div>
+</div>
+
+ <script src="https://kit.fontawesome.com/0d8d310a54.js" crossorigin="anonymous"></script>
+  <script src = 'api.js'></script>
+  <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+</body>
+</html>
