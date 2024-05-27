@@ -87,6 +87,6 @@ function onSignIn(CredentialResponse) {
    function onSignout() {
     localStorage.clear('authInfo');
     localStorage.clear('accessToken');
-    document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://localhost:5500/client/login.html";
+    document.location.href = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=https://changenow.netlify.app/";
    
  }
